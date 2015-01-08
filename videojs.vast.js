@@ -16,7 +16,10 @@
 
   defaults = {
     // seconds before skip button shows, negative values to disable skip button altogether
-    skip: 5
+    skip: 5,
+     bitrate: 1000, //advised bitrate for VPAID ads
+    viewMode: 'normal', //view mode for VPAID ads. Possible values: normal, thumbnail, fullscreen
+    vpaidElement: undefined //html element used for vpaid ads
   },
 
   Vast = function (player, settings) {
